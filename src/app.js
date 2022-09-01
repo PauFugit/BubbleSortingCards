@@ -5,9 +5,9 @@ import "./style.css";
 let cardsArray = [];
 const Drawbtn = document.querySelector(".draw-btn");
 const Sortbtn = document.querySelector(".sort-btn");
+const input = document.querySelector("#amount-cards");
 const card = document.querySelector(".card");
 const numb = document.querySelector(".numb");
-const input = document.querySelector("#amount-cards");
 
 const generateRandomNumber = () => {
   const numbers = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "J", "Q", "K"];
