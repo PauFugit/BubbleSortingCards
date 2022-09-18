@@ -27,12 +27,12 @@ body {
 .card {
   display: inline-block;
   position: relative;
-  width: 40px;
-  height: 60px;
+  width: 50px;
+  height: 70px;
+  border-radius: 2%;
   box-shadow: 1px 1px 1px 1px rgb(217, 175, 244);
   background-color: rgb(254, 247, 255);
   margin: 1rem;
-  padding: 1rem;
 }
 
 .card::before {
@@ -58,27 +58,18 @@ body {
   transform: rotate(180deg);
 }
 
-/* simbolos */
-.card.spades::before,
-.card.spades::after {
-  content: "\2660";
-}
-
-.card.clubs::before,
-.card.clubs::after {
-  content: "\2663";
-}
-
-.card.diamonds::before,
-.card.diamonds::after {
-  content: "\2666";
+.color-red {
   color: red;
 }
+.color-black {
+  color: black;
+}
+.number {
+  color: black;
+}
 
-.card.hearts::before,
-.card.hearts::after {
-  content: "\2665";
-  color: red;
+.header-content {
+  color: rgb(217, 175, 244);
 }
 
 *,
@@ -89,4 +80,9 @@ body {
 
 html {
   box-sizing: inherit;
+}
+
+#footer {
+  font-size: 10px;
+  color: aliceblue;
 }
